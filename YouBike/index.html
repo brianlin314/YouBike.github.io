@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>YouBike 2.0 Map</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./Assets/mask.png">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Leaflet.css -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/fcea51171e.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/all.css">
+</head>
+
+<body>
+  <aside class="board d-flex flex-column">
+    <div class="board-head pb-3">
+      <div class="px-3 pt-3 mb-2 d-flex justify-content-between">
+        <h1 class="mb-0 h3 font-weight-bold">UBike地圖</h1>
+        <div id="close-board-btn" class="d-block d-sm-none"><i class="fas fa-caret-right"></i></div>
+      </div>
+      <div id="date" class="px-3 mb-2"></div>
+      <div class="form-row px-3">
+        <div class="form-group col-6">
+          <select id="city" class="custom-select custom-select-sm">
+            <option value="" selected disabled>請選擇縣市</option>
+            <option>台北市</option>
+            <option>新北市</option>
+            <option>桃園市</option>
+            <option>新竹市</option>
+            <option>新竹市</option>
+            <option>台南市</option>
+            <option>高雄市</option>
+          </select>
+        </div>
+        <div class="form-group col-6">
+          <select id="area" class="custom-select custom-select-sm">
+            <option value="" selected disabled>請選擇站點區域</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row px-3">
+        <div class="col">
+          <div class="input-group input-group-sm">
+            <input type="text" id="search-value" class="form-control" placeholder="透過地址或名稱搜尋" aria-label="透過地址或名稱搜尋" aria-describedby="search-btn">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="search-btn">搜尋</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="store-total" class="px-3 mt-2">載入中...</div>
+    </div>
+    <div id="store-list"></div>
+    <div id="open-board-btn" class="d-block d-sm-none"><i class="fas fa-bars"></i></div>
+  </aside>
+
+  <main id="map"></main>
+
+ 
+
+  <!-- Leaflet.js -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- jQuery LoadingOverlay -->
+  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
+
+  <!-- Custom JS -->
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
