@@ -195,6 +195,7 @@ function createHTML(store, html, count, loved = false) {
     <div class="store-info p-3" data-lat="${store.lat}" data-lng="${store.lng}">
       <div class="d-flex justify-content-between">
         <h5 class="font-weight-bold mb-2">${store.sna}</h5>
+      </div>
       <p class="mb-1"><i class="fas fa-map-marker-alt"></i>  <a href="https://www.google.com.tw/maps/place/${store.ar}" target="_blank">${store.ar}</a></p>
       <div class="masks-info">
         <div class="mask-item" style="background-color: ${bgAdultColor}">可借車輛數量 <span>${store.sbi}</span> 個</div>
